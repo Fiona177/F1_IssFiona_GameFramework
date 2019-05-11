@@ -17,7 +17,7 @@ function addiVect(var Vecteur1,Vecteur2 : Vect):Vect;
 function sousVect(var Vecteur1,Vecteur2 : Vect):Vect;
 function prodparscaVect(var Vecteur:Vect; nb:integer):Vect;
 function proscaVect(var Vecteur1,Vecteur2 : Vect):integer;
-function provecVect(var Vecteur1,Vecteur2 : Vect):integer;
+function provecVect(var Vecteur1,Vecteur2 : Vect):Vect;
 
 
 implementation
