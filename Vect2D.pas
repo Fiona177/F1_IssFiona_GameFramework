@@ -69,9 +69,12 @@ begin
 	proscaVect:=((Vecteur1.posX*Vecteur2.posX)+(Vecteur1.posY*Vecteur2.posY));
 end;
 
-function provecVect(var Vecteur1,Vecteur2 : Vect):integer; //Fonction renvoyant un entier étant le produit vectoriel de deux vecteurs
+function provecVect(var Vecteur1,Vecteur2 : Vect):Vect; //Fonction renvoyant un vecteur étant le produit vectoriel de deux vecteurs
+var provectemp : Vect;
 begin
-	provecVect:=((Vecteur1.posX*Vecteur2.posY) - (Vecteur1.posY*Vecteur2.posX));
+	provectemp.posX:= Vecteur1.posY-Vecteur2.posY;
+	provectemp.posY:= Vecteur2.posX-Vecteur1.posX;
+	provecVect:=provectemp;
 end;
 
 end.
